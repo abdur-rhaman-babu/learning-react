@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "name": "iPhone 13 Pro",
+      "price": "$999",
+      "image": "https://i.postimg.cc/FzNRC8zJ/iphone-13-pro.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S21 Ultra",
+      "price": "$1199",
+      "image": "https://i.postimg.cc/wxnHBSg5/Samsung-Galaxy-S21-Ultra-5-G-500x500.webp"
+    },
+    {
+      "id": 3,
+      "name": "Google Pixel 6 Pro",
+      "price": "$899",
+      "image": "https://i.postimg.cc/dQyp5Dcd/MP1-Pd-W5-Mqp8-Mcl44-GJODGy2w-Fxya-RAPu-LBjlrs1d.jpg"
+    },
+    {
+      "id": 4,
+      "name": "OnePlus 9 Pro",
+      "price": "$969",
+      "image": "https://i.postimg.cc/GhPN1N2m/One-Plus-9-Pro-Pine-Green.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Xiaomi Mi 11 Ultra",
+      "price": "$899",
+      "image": "https://i.postimg.cc/sf7Hp854/Xiaomi-Mi-11-Ultra-Ceramic-Balck.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Sony Xperia 1 III",
+      "price": "$1299",
+      "image": "https://i.postimg.cc/MH7sqMzF/Sony-Xperia-1-III.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Apple iPhone 13",
+      "price": "$799",
+      "image": "https://i.postimg.cc/VLPTp1zh/Apple-i-Phone-13-Pro-Graphite-500x500.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Samsung Galaxy Z Fold 3",
+      "price": "$1799",
+      "image": "https://i.postimg.cc/sxdnk9CW/Samsung-Galaxy-Z-Fold3-5-G-500x500.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Google Pixel 5a",
+      "price": "$449",
+      "image": "https://i.postimg.cc/NMySqjy3/Google-pixel-5-A-Display.jpg"
+    },
+    {
+      "id": 10,
+      "name": "OnePlus Nord 2",
+      "price": "$499",
+      "image": "https://i.postimg.cc/HLvRhyL0/download.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Xiaomi Redmi Note 10 Pro",
+      "price": "$279",
+      "image": "https://i.postimg.cc/zXnmGvd5/51oqrbn-YECL-AC-SL1024.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Sony Xperia 5 III",
+      "price": "$1099",
+      "image": "https://i.postimg.cc/htp5XdVF/sony-xperia-5-iii.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Apple iPhone SE (2020)",
+      "price": "$399",
+      "image": "https://i.postimg.cc/Dw2NfgJd/Apple-i-Phone-SE-2020-Red.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Samsung Galaxy A52",
+      "price": "$349",
+      "image": "https://i.postimg.cc/VNhZRP7D/64f3c957663bfe3e982252cd-pre-owned-samsung-galaxy-a52-5g-fully.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Google Pixel 4a",
+      "price": "$349",
+      "image": "https://i.postimg.cc/mD0qbWCt/Google-Pixel-4a.jpg"
+    },
+    {
+      "id": 16,
+      "name": "OnePlus 8T",
+      "price": "$749",
+      "image": "https://i.postimg.cc/Gpm6KQbh/61s-Ai-F9qtu-L-AC-SL1500.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Xiaomi Poco X3 Pro",
+      "price": "$249",
+      "image": "https://i.postimg.cc/x8MZ8p3g/61ar9vd-B3-RL-AC-UF894-1000-QL80.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Sony Xperia 10 III",
+      "price": "$499",
+      "image": "https://i.postimg.cc/x1RWL7D4/download-1.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Apple iPhone 12 Mini",
+      "price": "$699",
+      "image": "https://i.postimg.cc/gJ6SttQd/654d80d2996a37080a0891b7-like-new-apple-iphone-12-mini-a2176-64gb.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Samsung Galaxy Note 20 Ultra",
+      "price": "$1299",
+      "image": "https://i.postimg.cc/jSKpwT9f/download-2.jpg"
+    }
+  ]
+  

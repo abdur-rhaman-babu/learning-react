@@ -1,0 +1,11 @@
+.mobile-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1rem;
+}
+
+.mobile-card{
+    border:2px solid yellow;
+    border-radius:.5rem;
+    padding:1rem;
+}

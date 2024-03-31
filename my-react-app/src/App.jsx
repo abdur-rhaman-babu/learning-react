@@ -1,12 +1,11 @@
 /* eslint-disable react/prop-types */
 import './App.css'
-import Users from './components/Users'
-
+import Persons from './components/Persons'
 function App() {
 
   return (
     <>
-    <Users/>
+      <Persons/>
     </>
   )
 }
