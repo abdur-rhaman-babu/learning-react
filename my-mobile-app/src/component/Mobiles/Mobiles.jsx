@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./Mobiles.css"
 import { useEffect } from "react";
 import Mobile from "./Mobile";
-import { addToLS, getDataFromLS } from "../Utils/localstorage";
+import { addToLS, getDataFromLS, removeFromLS } from "../Utils/localstorage";
+import AddCart from "./AddCart";
 
 const Mobiles = () => {
     const [mobiles, setMobiles] = useState([])
@@ -32,10 +33,13 @@ const Mobiles = () => {
         }
     } ,[mobiles])
 
+    // remove form add cart
     const handleRemoveFromCart = (id) =>{
         const filtered = carts.filter((cart)=> cart.id !==id)
         setCart(filtered)
+        removeFromLS(id)
     }
+
 
     const handleAddToCart = (mobile) =>{
         const newCart = [...carts, mobile]
@@ -47,17 +51,15 @@ const Mobiles = () => {
        <div>
         <h3>Mobile: {mobiles.length}</h3>
         <h3>Add Cart: {carts.length}</h3>
+        <div className="mobile-container">
         {
-            carts && carts.map((cart)=> <div className="mobile-card">
-            <h3>{cart.name}</h3>
-            <img src={cart.image} alt="" height={150} width={120}/>
-            <p>Price: {cart.price}</p> 
-            <div style={{display:"flex", alignItems:"center", justifyContent:'space-between'}}>
-            <button>Buy Now</button>
-            <button onClick={()=>handleRemoveFromCart(cart.id)}>Remove</button>
-            </div>
-            </div>)
+            carts && carts.map((cart)=>
+            <AddCart key={cart.id} 
+            cart = {cart}
+            handleRemoveFromCart= {handleRemoveFromCart}
+            />)
         }
+        </div>
          <div className="mobile-container">
             {
                 mobiles && mobiles.map((mobile)=> 
