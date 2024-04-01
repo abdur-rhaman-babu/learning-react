@@ -20,9 +20,7 @@ const Blog = ({blog, hundleBookmark}) => {
                         <button onClick = {()=>hundleBookmark(blog)}
                         className='cursor-pointer'>
                         <CiBookmark /> 
-                        </button>
-                       
-                        
+                        </button>        
                 </div>
             </div>
             <h1 className='text-2xl font-semibold'>{title}</h1>

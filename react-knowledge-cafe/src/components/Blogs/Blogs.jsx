@@ -5,7 +5,7 @@ import Bookmarks from "../Bookmarks/Bookmarks";
 const Blogs = () => {
     const [blogs, setBlogs] = useState([])
     const [bookmarks, setBookmarks] = useState([])
-
+ 
     useEffect(()=>{
         fetch('blog.json')
         .then((res)=> res.json())
@@ -18,6 +18,11 @@ const Blogs = () => {
         setBookmarks(newBookmark)
     }
 
+    // remove from book mark
+    const hundleRemoveFromBookmark = (id) =>{
+        const filtered = bookmarks.filter((bookmark)=> bookmark.id !== id)
+        setBookmarks(filtered)
+    }
 
     return (
         <div className="flex max-w-7xl mx-auto my-8">
@@ -31,12 +36,16 @@ const Blogs = () => {
             }
           </div>
             <div className="w-1/4 bg-[#eee]">
-                <h1 className="border-solid border-2 border-blue-600 text-center p-3 rounded font-semibold text-2xl">Spend time on read:</h1>
-                <h1 className="font-semibold my-3 p-4 text-center bg-orange-700 text-2xl text-white" >Total Bookmark: {bookmarks.length}</h1>
+                <h1 className="border-solid border-2 
+                border-blue-600 text-center p-3 
+                rounded font-semibold text-2xl">Spend time on read:</h1>
+                <h1 className="font-semibold my-3 p-4 text-center
+                 bg-orange-700 text-2xl text-white" >Total Bookmark: {bookmarks.length}</h1>
             {
                 bookmarks && bookmarks.map((bookmark)=> 
                 <Bookmarks key={bookmark.id} 
                 bookmark = {bookmark}
+                hundleRemoveFromBookmark = {hundleRemoveFromBookmark}
                 />)
             }
             </div>
