@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.postimg.cc/TPh9HXJL/cover-1.png",
+      "title": "The Art of Programming",
+      "author_img": "https://i.postimg.cc/mrTj3Htw/author-img1.jpg",
+      "author": "John Smith",
+      "posted_date": "April 1, 2024",
+      "reading_time": 10,
+      "hashtags": ["programming", "coding", "technology"]
+    },
+    {
+      "id": 2,
+      "cover": "https://i.postimg.cc/W3k7T6Ks/cover-2.png",
+      "title": "The Power of Meditation",
+      "author_img": "https://i.postimg.cc/wjQZdHNw/author-img2.jpg",
+      "author": "Emily Jones",
+      "posted_date": "April 1, 2024",
+      "reading_time": 8,
+      "hashtags": ["meditation", "mindfulness", "wellness"]
+    },
+    {
+      "id": 3,
+      "cover": "https://i.postimg.cc/4yRQdHkV/cover-3.png",
+      "title": "Exploring the Universe",
+      "author_img": "https://i.postimg.cc/zfDMzMS8/author-img3.jpg",
+      "author": "David Johnson",
+      "posted_date": "April 1, 2024",
+      "reading_time": 15,
+      "hashtags": ["space", "astronomy", "science"]
+    },
+    {
+      "id": 4,
+      "cover": "https://i.postimg.cc/T1jqW2fS/cover-4.png",
+      "title": "Cooking with Passion",
+      "author_img": "https://i.postimg.cc/zXW40TGZ/author-img5.jpg",
+      "author": "Sarah Lee",
+      "posted_date": "April 1, 2024",
+      "reading_time": 12,
+      "hashtags": ["cooking", "food", "recipes"]
+    },
+    {
+      "id": 5,
+      "cover": "https://i.postimg.cc/HLKtqP6S/cover-5.jpg",
+      "title": "The World of Finance",
+      "author_img": "https://i.postimg.cc/jj81LXZN/author-img4.jpg",
+      "author": "Michael Brown",
+      "posted_date": "April 1, 2024",
+      "reading_time": 20,
+      "hashtags": ["finance", "investing", "economics"]
+    }
+  ]
+  
