@@ -7,7 +7,7 @@ const AddCart = ({cart, handleRemoveFromCart}) => {
             <img src={image} alt="" height={150} width={120}/>
             <p>Price: {price}</p> 
             <div style={{display:"flex", alignItems:"center", justifyContent:'space-between'}}>
-            <button>Buy Now</button>
+            <button style={{background:"#eb2f06", color:"#fff"}}>Buy Now</button>
             <button onClick={()=>handleRemoveFromCart(id)}>Remove</button>
             </div>
             </div>
