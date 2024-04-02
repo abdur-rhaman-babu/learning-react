@@ -19,15 +19,11 @@ const Mobiles = () => {
     useEffect(()=>{
         if(mobiles.length > 0){
             const getStorCart = getDataFromLS()
-            // console.log(getStorCart)
-
+            
             const savedCart = []
             for (const id of getStorCart){
-                // console.log(id)
                 const mobile = mobiles.find((mobile)=> mobile.id === id)
-                // if (mobile){
-                    savedCart.push(mobile)
-                // }
+                savedCart.push(mobile)
             }
             setCart(savedCart)
         }

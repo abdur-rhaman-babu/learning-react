@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Blog from "./Blog";
 import Bookmarks from "../Bookmarks/Bookmarks";
+import { addToLS, getDataFromLS, removeDataFromLS } from "../Utils/LocalStroage";
+
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([])
@@ -13,21 +15,33 @@ const Blogs = () => {
         .then((data)=> setBlogs(data))
     },[])
 
+    useEffect (()=>{
+        if(blogs.length > 0){
+            const getStoredBookmark = getDataFromLS()
+            const savedBookmark = []
+            for(const id of getStoredBookmark){
+                const findData = blogs.find((blog)=>blog.id === id)
+                savedBookmark.push(findData)
+            }
+            setBookmarks(savedBookmark)
+        }
+    },[blogs])
+
     // add book mark
     const hundleBookmark = (blog) =>{
         const newBookmark = [...bookmarks, blog]
         setBookmarks(newBookmark)
-        
+        addToLS(blog.id)
     }
     
     // remove from book mark
     const hundleRemoveFromBookmark = (id) =>{
         const filtered = bookmarks.filter((bookmark)=> bookmark.id !== id)
         setBookmarks(filtered)
+        removeDataFromLS(id)
     }
 
     const hundleReadingTime = (time) =>{
-        console.log('reading time soon', time)
         setRead(read + time)
     }
 
