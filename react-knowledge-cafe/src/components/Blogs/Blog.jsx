@@ -1,9 +1,17 @@
 import  PropTypes  from 'prop-types';
+import { useState } from 'react';
 import { CiBookmark } from "react-icons/ci";
-const Blog = ({blog, hundleBookmark}) => {
+import { IoBookmark } from "react-icons/io5";
+
+const Blog = ({blog, hundleBookmark, hundleRemoveFromBookmark, hundleReadingTime}) => {
     // console.log(bookmarks)
-   
-    const {cover,author_img, author, posted_date, reading_time,title, hashtags} = blog;
+   const [isMark, setIsMark] = useState(false)
+
+    const hundleMark = () =>{
+        setIsMark(!isMark)
+    }
+
+    const {cover,author_img, author, posted_date, reading_time,title, hashtags,id} = blog;
     return (
         <div className='w-3/4'>
             <img className='w-full' src={cover} alt="" />
@@ -17,22 +25,31 @@ const Blog = ({blog, hundleBookmark}) => {
                 </div>
                 <div className='flex items-center gap-2'>
                     <p>{reading_time} min read</p>
-                        <button onClick = {()=>hundleBookmark(blog)}
-                        className='cursor-pointer'>
-                        <CiBookmark /> 
-                        </button>        
+                    <div onClick={hundleMark}>
+                        {
+                            isMark ? 
+                            <button className='text-red-600' onClick={()=>hundleRemoveFromBookmark(id)}>
+                            <IoBookmark />
+                            </button> : 
+                            <button onClick = {()=>hundleBookmark(blog)}>
+                            <CiBookmark />
+                            </button>
+                        }
+                    </div>
                 </div>
             </div>
             <h1 className='text-2xl font-semibold'>{title}</h1>
             <p className='my-4'>#{hashtags.join(' #')}</p>
-            <p className='mb-5 text-blue-800 underline cursor-pointer' href="">Mark as read</p>
+            <button onClick={()=>hundleReadingTime(reading_time)} className='mb-5 text-purple-800 underline cursor-pointer' href="">Mark as read</button>
         </div>
     );
 };
 
 Blog.propTypes = {
     blog: PropTypes.object.isRequired,
-    hundleBookmark: PropTypes.func.isRequired
+    hundleBookmark: PropTypes.func.isRequired,
+    hundleRemoveFromBookmark: PropTypes.func.isRequired,
+    hundleReadingTime: PropTypes.func.isRequired
 }
 
 export default Blog;

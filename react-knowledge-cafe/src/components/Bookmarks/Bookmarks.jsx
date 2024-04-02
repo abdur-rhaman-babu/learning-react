@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import { MdDelete } from "react-icons/md";
 const Bookmarks = ({bookmark, hundleRemoveFromBookmark}) => {
     // console.log(bookmark)
- 
     const {title,cover,id} = bookmark;
+    
     return (
             <div className='my-4 '>
             <img src={cover} alt="" />
