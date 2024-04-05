@@ -1,0 +1,75 @@
+
+  [
+    {
+      "id": 1,
+      "name": "Fitness First",
+      "features": ["Cardio Equipment", "Strength Training Machines", "Free Weights", "Group Exercise Classes", "Personal Training"],
+      "price": 50,
+      "month": 1
+    },
+    {
+      "id": 2,
+      "name": "Golds Gym",
+      "features": ["Cardio Equipment", "Strength Training Machines", "Free Weights", "Group Exercise Classes", "Sauna", "Swimming Pool"],
+      "price": 60,
+      "month": 3
+    },
+    {
+      "id": 3,
+      "name": "24 Hour Fitness",
+      "features": ["Cardio Equipment", "Strength Training Machines", "Free Weights", "Group Exercise Classes", "Basketball Court", "Tennis Court", "Personal Training"],
+      "price": 55,
+      "month": 6
+    },
+    {
+      "id": 4,
+      "name": "Anytime Fitness",
+      "features": ["Cardio Equipment", "Strength Training Machines", "Free Weights", "Group Exercise Classes", "Yoga Studio", "Personal Training"],
+      "price": 45,
+      "month": 12
+    },
+    {
+      "id": 5,
+      "name": "Planet Fitness",
+      "features": ["Cardio Equipment", "Strength Training Machines", "Free Weights", "Group Exercise Classes", "Tanning Beds"],
+      "price": 30,
+      "month": 1
+    },
+    {
+      "id": 6,
+      "name": "Equinox",
+      "features": ["Cardio Equipment", "Strength Training Machines", "Free Weights", "Group Exercise Classes", "Luxury Amenities", "Spa", "Personal Training"],
+      "price": 150,
+      "month": 6
+    },
+    {
+      "id": 7,
+      "name": "LA Fitness",
+      "features": ["Cardio Equipment", "Strength Training Machines", "Free Weights", "Group Exercise Classes", "Basketball Court", "Swimming Pool", "Sauna", "Personal Training"],
+      "price": 70,
+      "month": 3
+    },
+    {
+      "id": 8,
+      "name": "YMCA",
+      "features": ["Cardio Equipment", "Strength Training Machines", "Free Weights", "Group Exercise Classes", "Indoor Track", "Swimming Pool", "Basketball Court"],
+      "price": 40,
+      "month": 12
+    },
+    {
+      "id": 9,
+      "name": "Crunch Fitness",
+      "features": ["Cardio Equipment", "Strength Training Machines", "Free Weights", "Group Exercise Classes", "Tanning Beds", "HydroMassage Beds", "Personal Training"],
+      "price": 50,
+      "month": 3
+    },
+    
+    {
+      "id": 10,
+      "name": "Snap Fitness",
+      "features": ["Cardio Equipment", "Strength Training Machines", "Free Weights", "Group Exercise Classes", "24/7 Access", "Personal Training"],
+      "price": 35,
+      "month":4
+    }
+  ]
+  
