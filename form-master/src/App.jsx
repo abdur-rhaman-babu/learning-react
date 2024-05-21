@@ -1,10 +1,11 @@
 import './App.css'
-import SimpleForm from './components/SimpleForm/SimpleForm';
+import StateFullForm from './components/StateFullForm/StateFullForm';
+
 const App = () => {
   return (
-    <div>
-        <SimpleForm/>
-    </div>
+    <>
+       <StateFullForm/>
+    </>
   );
 };
 
