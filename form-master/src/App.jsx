@@ -1,10 +1,10 @@
 import './App.css'
-import StateFullForm from './components/StateFullForm/StateFullForm';
+import RefForm from './components/RefForm/RefForm';
 
 const App = () => {
   return (
     <>
-       <StateFullForm/>
+      <RefForm/>
     </>
   );
 };
